@@ -145,7 +145,18 @@ void Drive_Pattern_1()
 }
 
 /**
- * @brief
+ * @brief Handles collision behavior
+ *
+ * This function executes a predefined drive pattern using the DC motors when collision happens.
+ * It involves a sequence of motor commands to create specific movements. The sequence consists of:
+ *
+ * 1. Stopping the motors for 2 seconds.
+ * 2. Setting both motors to move backward with a 30% duty cycle for 2 seconds.
+ * 3. Stopping the motors for 1 second.
+ * 4. Setting both motors to move right with a 10% duty cycle for 4 seconds.
+ * 5. Stopping the motors for 2 seconds.
+ *
+ * @note The Clock_Delay1ms function is used to introduce delays between motor actions.
  *
  * @param None
  *
@@ -160,7 +171,7 @@ void Handle_Collision()
     Clock_Delay1ms(2000);
 
     // Move the motors backward with 30% duty cycle
-    Motor_Backward(30,30);
+    Motor_Backward(4500,4500);
 
     // Make a function call to Clock_Delay1ms(2000)
     Clock_Delay1ms(2000);
@@ -172,7 +183,7 @@ void Handle_Collision()
     Clock_Delay1ms(1000);
 
     // Make the robot turn to the right with 10% duty cycle
-    Motor_Right(10,10);
+    Motor_Right(1500,1500);
 
     // Make a function call to Clock_Delay1ms(4000)
     Clock_Delay1ms(4000);
