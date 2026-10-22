@@ -24,7 +24,7 @@
 #define TIMER_A0_PERIOD_CONSTANT 15000
 
 /**
- * @brief
+ * @brief Sets TimerA0 clock source and selects settings
  *
  * @param period_constant
  *
