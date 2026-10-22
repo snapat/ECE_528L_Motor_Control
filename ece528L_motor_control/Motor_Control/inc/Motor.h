@@ -56,7 +56,7 @@ void Motor_Forward(uint16_t left_duty_cycle, uint16_t right_duty_cycle);
 void Motor_Backward(uint16_t left_duty_cycle, uint16_t right_duty_cycle);
 
 /**
- * @brief Moves the motors backwards at the inputed duty cycles
+ * @brief Moves the left motor in reverse at the specified duty cycle and the right motor forward at the specified duty cycle
  *
  * @param left_duty_cycle
  *
@@ -67,7 +67,7 @@ void Motor_Backward(uint16_t left_duty_cycle, uint16_t right_duty_cycle);
 void Motor_Left(uint16_t left_duty_cycle, uint16_t right_duty_cycle);
 
 /**
- * @brief Moves the left motor in reverse at the specified duty cycle and the right motor forward at the specified duty cycle
+ * @brief Moves the right motor in reverse at the specified duty cycle and the left motor forward at the specified duty cycle
  *
  * @param left_duty_cycle
  *
